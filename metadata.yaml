@@ -2,16 +2,20 @@
 image_name: alpine-git
 registries:
   - url: bcit.io
-test_command: sleep infinity
+  - url: ''
+    org_name: bcit
+tags:
+  - '<%= tag_join(version, variant) %>'
+  - '<%= tag_join(version, variant, "latest") %>'
 labels:
-  maintainer: "liz.mey.kraft@gmail.com, jesse@weisner.ca, chriswood.ca@gmail.com"
+  maintainer: "jesse@weisner.ca, chriswood.ca@gmail.com"
 versions:
-  '3':
-vars:
-  source_image: alpine
-  tini_version: '0.19.0'
-  de_version: '1.6'
-  dockerize_version: '0.6.1'
+  '3.13':
+  '3.14':
+  '3.15':
+  '3.16':
+    tags:
+      - '<%= tag_join(variant, "latest") %>'
 variants:
   '':
   supervisord:

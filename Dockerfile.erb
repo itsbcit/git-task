@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:<%= image.version %>
 
 <%= snippet('labels', binding) -%>
 
@@ -11,9 +11,9 @@ RUN apk upgrade --no-cache \
         rsync \
         tzdata
 
-<%= snippet('docker-entrypoint', binding) -%>
-<%= snippet('dockerize', binding) -%>
-<%= snippet('tini', binding) -%>
+<%= snippet('docker-entrypoint', binding) %>
+<%= snippet('dockerize', binding) %>
+<%= snippet('tini', binding) %>
 
 ENTRYPOINT ["/tini", "--", "/docker-entrypoint.sh"]
 
