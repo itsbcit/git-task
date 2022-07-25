@@ -9,7 +9,8 @@ ENV HOME /
 RUN apk upgrade --no-cache \
  && apk add --no-cache \
         rsync \
-        tzdata
+        tzdata \
+        git
 
 <%= snippet('docker-entrypoint', binding) %>
 <%= snippet('dockerize', binding) %>
