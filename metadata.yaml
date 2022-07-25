@@ -1,10 +1,13 @@
 ---
-image_name: template_test
+image_name: alpine-git
 registries:
   - url: bcit.io
 labels:
-  maintainer: "jesse@weisner.ca, chriswood.ca@gmail.com"
+  maintainer: "liz.mey.kraft@gmail.com, jesse@weisner.ca, chriswood.ca@gmail.com"
+versions:
+  '3':
 vars:
+  source_image: alpine
   tini_version: '0.19.0'
-  de_version: '1.5'
+  de_version: '1.6'
   dockerize_version: '0.6.1'
