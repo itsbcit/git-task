@@ -10,9 +10,6 @@ tags:
 labels:
   maintainer: "jesse@weisner.ca, chriswood.ca@gmail.com"
 versions:
-  '3.13':
-  '3.14':
-  '3.15':
   '3.16':
     tags:
       - '<%= tag_join(variant, "latest") %>'
