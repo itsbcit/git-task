@@ -9,7 +9,7 @@ tags:
   - '<%= tag_join(version, variant) %>'
   - '<%= tag_join(version, variant, "latest") %>'
 labels:
-  maintainer: "jesse@weisner.ca, chriswood.ca@gmail.com"
+  maintainer: "liz.mey.kraft@gmail.com, jesse@weisner.ca, chriswood.ca@gmail.com"
 versions:
   '3.16':
     tags:
