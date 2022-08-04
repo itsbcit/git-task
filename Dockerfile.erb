@@ -11,7 +11,7 @@ RUN apk upgrade --no-cache \
         rsync \
         tzdata \
         git \
-        ssh
+        openssh
 
 <%= snippet('docker-entrypoint', binding) %>
 <%= snippet('dockerize', binding) %>
