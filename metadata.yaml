@@ -1,19 +1,7 @@
 ---
-image_name: alpine-git
+image_name: git-task
 registries:
   - url: bcit.io
-  - url: ''
-    org_name: bcit
-test_command: sleep infinity
-tags:
-  - '<%= tag_join(version, variant) %>'
-  - '<%= tag_join(version, variant, "latest") %>'
 labels:
   maintainer: "liz.mey.kraft@gmail.com, jesse@weisner.ca, chriswood.ca@gmail.com"
-versions:
-  '3.16':
-    tags:
-      - '<%= tag_join(variant, "latest") %>'
-variants:
-  '':
-  supervisord:
+
